@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Draw Together</title>
+		<input type="button" id="btnReset" value="Reset">
+		<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Draw Together!</h1>
+		<canvas id="drawCanvas"></canvas>
+		<script src="drawtogether.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				if(drawTogether) {
+					drawTogether.initialize('drawCanvas');
+				}
+			};
+		</script>
+	</body>
+</html>
